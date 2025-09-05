@@ -1,0 +1,33 @@
+.pageHeader {
+  border-bottom: 1px solid #374151;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.pageHeader h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #ffffff;
+}
+.pageHeader p {
+  margin: 5px 0 0 0;
+  color: #9ca3af;
+  font-size: 1rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+.mainPanel { grid-column: 1 / 2; }
+.sidePanel { grid-column: 2 / 3; }
+@media (max-width: 1024px) {
+  .container { grid-template-columns: 1fr; }
+  .mainPanel, .sidePanel { grid-column: 1 / -1; }
+}

@@ -1,0 +1,9 @@
+html, body {
+  padding: 0; margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* New, more sophisticated dark background */
+  background-color: #111315;
+  color: #d1d5db; /* A softer off-white for better readability */
+}
+* { box-sizing: border-box; }
+a { color: inherit; text-decoration: none; }

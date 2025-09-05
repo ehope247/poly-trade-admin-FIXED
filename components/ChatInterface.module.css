@@ -1,0 +1,128 @@
+.chatLayout {
+  display: flex;
+  height: calc(100vh - 150px); /* Adjust height to fit within the layout */
+  background-color: #1c1f24;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.userList {
+  width: 300px;
+  border-right: 1px solid #374151;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.listHeader {
+  padding: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #374151;
+  color: #ffffff;
+}
+.userItem {
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #374151;
+}
+.userItem:hover {
+  background-color: #374151;
+}
+.userItem span {
+  display: block;
+  color: #e5e7eb;
+  font-weight: 500;
+}
+.userItem small {
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+.userItem.selected {
+  background-color: #111827;
+  border-right: 3px solid #38bdf8;
+}
+.noUsers {
+  padding: 20px;
+  color: #9ca3af;
+  text-align: center;
+}
+.chatWindow {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.chatHeader {
+  padding: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #374151;
+  background-color: #1c1f24;
+  color: #ffffff;
+}
+.messageArea {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  line-height: 1.5;
+}
+.userMessage {
+  background-color: #374151;
+  border-bottom-left-radius: 3px;
+  align-self: flex-start;
+}
+.adminMessage {
+  background-color: #1e40af; /* A professional blue */
+  color: #ffffff;
+  border-bottom-right-radius: 3px;
+  align-self: flex-end;
+}
+.deleteButton {
+  position: absolute; top: -5px; background: #ef4444; color: white;
+  border: none; border-radius: 50%; width: 20px; height: 20px;
+  cursor: pointer; opacity: 0; transition: opacity 0.2s;
+  display: flex; align-items: center; justify-content: center;
+  line-height: 1;
+}
+.message:hover .deleteButton { opacity: 1; }
+.inputArea {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #374151;
+}
+.inputArea input {
+  flex-grow: 1;
+  background-color: #111315;
+  border: 1px solid #374151;
+  border-radius: 5px;
+  padding: 12px;
+  color: #e0e0e0;
+  margin-right: 10px;
+}
+.inputArea input:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+.inputArea button {
+  background-color: #38bdf8;
+  color: #111315;
+  border: none;
+  padding: 0 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #9ca3af;
+  font-size: 1.2rem;
+}

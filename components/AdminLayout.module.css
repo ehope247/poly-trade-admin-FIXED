@@ -1,0 +1,50 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  width: 250px;
+  background-color: #1c1f24; /* A slightly lighter dark for contrast */
+  border-right: 1px solid #374151; /* A softer, modern border color */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.navLink {
+  display: flex; align-items: center; gap: 15px;
+  padding: 12px 15px; border-radius: 8px;
+  color: #9ca3af; /* A secondary gray for inactive links */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.navLink:hover {
+  background-color: #374151;
+  color: #ffffff;
+}
+.navLink.active {
+  background-color: #111827; /* A deep blue for the active link */
+  color: #ffffff;
+  font-weight: bold;
+}
+.mainContent {
+  flex-grow: 1;
+  padding: 40px;
+  /* The background color now comes from globals.css */
+}
+.separator {
+  height: 1px;
+  background-color: #374151;
+  margin: 10px 0;
+}
